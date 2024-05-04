@@ -1,3 +1,15 @@
+# 代码
+## 仅支持windows
+
+原来  `wx-dump-4j/wx-dump-admin/src/main/java/com/xcs/wx/service/impl
+/WeChatServiceImpl.java` 这里直接很多操作系统相关的操作
+如从内存中读取密钥
+```
+        // 从计算出的密钥地址读取密钥
+        if (!kernel32.ReadProcessMemory(process, new Pointer(keyAddress), keyBuffer, (int) keyBuffer.size(), bytesRead)) {
+            return null;
+        }
+```
 <div align="center">
     <img alt="logo" src="image/banner.png" style="height: 80px">
 </div>
